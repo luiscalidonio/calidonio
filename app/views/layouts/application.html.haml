@@ -7,7 +7,7 @@
     %title= content_for?(:title) ? yield(:title) : "Calidonio"
     = csrf_meta_tags
     /[if lt IE 9]
-      = javascript_include_tag "html5shiv.js"
+      = javascript_include_tag "html5shiv"
     = stylesheet_link_tag "application", media: :all
     = favicon_link_tag 'favicon.ico', rel: 'shortcut icon'
   %body
