@@ -9,7 +9,7 @@
     /[if lt IE 9]
       = javascript_include_tag "html5shiv"
     = stylesheet_link_tag "application", media: :all
-    = favicon_link_tag 'favicon.ico', rel: 'shortcut icon'
+    = favicon_link_tag '/favicon.ico', rel: 'shortcut icon'
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -28,7 +28,7 @@
     .container
       .row
         .span9
-          = bootstrap_flash
+          -# bootstrap_flash
           = yield
         .span3
           .well.sidebar-nav
@@ -41,7 +41,7 @@
 
       %footer
         %p
-          = raw("&copy:")
+          = raw("&copy;")
           = "Company 2013"
 
     = javascript_include_tag "application"
