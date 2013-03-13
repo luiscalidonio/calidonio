@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: calidonio_test
+  database: calidonio_development
   pool: 5
   username: postgres
   password: per-12475
@@ -17,7 +17,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: calidonio_production
+  database: calidonio_development
   pool: 5
   username: postgres
   password: per-12475
