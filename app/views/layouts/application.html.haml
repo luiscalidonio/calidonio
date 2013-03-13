@@ -1,0 +1,47 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", content: "IE=Edge,chrome=1"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+    %title= content_for?(:title) ? yield(:title) : "Calidonio"
+    = csrf_meta_tags
+    /[if lt IE 9]
+      = javascript_include_tag "html5shiv.js"
+    = stylesheet_link_tag "application", media: :all
+    = favicon_link_tag 'favicon.ico', rel: 'shortcut icon'
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to "#", class: "btn btn-navbar", data: {target: ".nav-collapse", toggle: "collapse"} do
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to "Calidonio", "#", class: "brand"
+          .container.nav-collapse
+            %ul.nav
+              %li= link_to "Link1", "#"
+              %li= link_to "Link2", "#"
+              %li= link_to "Link3", "#"
+
+    .container
+      .row
+        .span9
+          = bootstrap_flash
+          = yield
+        .span3
+          .well.sidebar-nav
+            %h3= "Sidebar"
+            %ul.nav.nav-list
+              %li.nav-header= "Sidebar"
+              %li= link_to "Link1", "#"
+              %li= link_to "Link2", "#"
+              %li= link_to "Link3", "#"
+
+      %footer
+        %p
+          = raw("&copy:")
+          = "Company 2013"
+
+    = javascript_include_tag "application"

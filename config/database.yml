@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: calidonio_development
+  pool: 5
+  username: postgres
+  password:  per-12475
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: calidonio_test
+  pool: 5
+  username: postgres
+  password: per-12475
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: calidonio_production
+  pool: 5
+  username: postgres
+  password: per-12475
