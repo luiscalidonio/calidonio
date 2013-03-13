@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -18,6 +18,12 @@ gem 'delayed_job_active_record'
 gem 'axlsx_rails'
 gem "thin"
 gem "squeel"
+gem 'will_paginate'
+gem 'remotipart'
+gem 'globalize3'
+gem 'tinymce-rails'
+gem 'paperclip'
+gem 'enumerated_attribute'
 
 gem 'simple_form'
 gem 'client_side_validations'
